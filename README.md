@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SAT-AGRI FPO Website Starter
 
 This package converts the uploaded Streamlit project into a React frontend + FastAPI backend while reusing the supplied CSV, trained model, and model column list.
@@ -36,3 +37,15 @@ Keep both terminals running while you use the website.
 - The API keeps the existing prediction model and dataset files, and ports the prediction/recommendation flow from `app.py`.
 - The original model artifact was created with scikit-learn 1.7.2, so the backend pins that version for compatibility.
 - Treat model outputs as estimates, not guaranteed farmer outcomes. Review data and causal assumptions before making research claims.
+=======
+# SAT-AGRI backend
+
+1. Open PowerShell in this `backend` folder.
+2. Create a virtual environment (recommended): `python -m venv .venv`
+3. Activate it: `.venv\Scripts\Activate.ps1`
+4. Install: `pip install -r requirements.txt`
+5. Run: `uvicorn main:app --reload`
+6. Open http://127.0.0.1:8000/docs to test the API.
+
+The CSV and model artifacts were copied from the uploaded Streamlit project. The API ports the existing prediction and recommendation flow. For deployment, restrict CORS to your actual frontend domain.
+>>>>>>> 981d7655acd071c0d5a6b195076373b9d3559308
